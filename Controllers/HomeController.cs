@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RealEstateWebApp.Models;
@@ -23,7 +19,42 @@ namespace RealEstateWebApp.Controllers
             return View();
         }
 
+        public IActionResult Buy()
+        {
+            return View();
+        }
+
+        public IActionResult Sell()
+        {
+            return View();
+        }
+
+        public IActionResult Rent()
+        {
+            return View();
+        }
+
+        public IActionResult Careers()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
         {
             return View();
         }
