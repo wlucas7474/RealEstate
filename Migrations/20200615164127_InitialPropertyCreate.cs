@@ -14,7 +14,6 @@ namespace RealEstateWebApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Address = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
                     NumBeds = table.Column<int>(nullable: false),
                     NumBaths = table.Column<decimal>(nullable: false),
                     IsStudio = table.Column<bool>(nullable: false),
@@ -24,7 +23,7 @@ namespace RealEstateWebApp.Migrations
                     NumGarageSpots = table.Column<int>(nullable: false),
                     AttachedGarage = table.Column<bool>(nullable: false),
                     LotSize = table.Column<decimal>(nullable: false),
-                    YearBuilt = table.Column<DateTime>(nullable: false),
+                    YearBuilt = table.Column<int>(nullable: false),
                     LatestRenovationDate = table.Column<DateTime>(nullable: true),
                     LatestRenovationDescription = table.Column<string>(nullable: true),
                     Heating = table.Column<string>(nullable: true),

@@ -54,7 +54,7 @@ namespace RealEstateWebApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Address,Description,NumBeds,NumBaths,IsStudio,Sqft,HomeType,NumParkingSpots,NumGarageSpots,AttachedGarage,LotSize,YearBuilt,LatestRenovationDate,LatestRenovationDescription,Heating,Cooling,Flooring,NumStories,HasBasement,Gas,Electric,Sewer,Internet,TV,OtherDetails")] Property @property)
+        public async Task<IActionResult> Create([Bind("Id,Address,NumBeds,NumBaths,IsStudio,Sqft,HomeType,NumParkingSpots,NumGarageSpots,AttachedGarage,LotSize,YearBuilt,LatestRenovationDate,LatestRenovationDescription,Heating,Cooling,Flooring,NumStories,HasBasement,Gas,Electric,Sewer,Internet,TV,OtherDetails")] Property @property)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace RealEstateWebApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Address,Description,NumBeds,NumBaths,IsStudio,Sqft,HomeType,NumParkingSpots,NumGarageSpots,AttachedGarage,LotSize,YearBuilt,LatestRenovationDate,LatestRenovationDescription,Heating,Cooling,Flooring,NumStories,HasBasement,Gas,Electric,Sewer,Internet,TV,OtherDetails")] Property @property)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Address,NumBeds,NumBaths,IsStudio,Sqft,HomeType,NumParkingSpots,NumGarageSpots,AttachedGarage,LotSize,YearBuilt,LatestRenovationDate,LatestRenovationDescription,Heating,Cooling,Flooring,NumStories,HasBasement,Gas,Electric,Sewer,Internet,TV,OtherDetails")] Property @property)
         {
             if (id != @property.Id)
             {

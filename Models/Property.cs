@@ -12,8 +12,6 @@ namespace RealEstateWebApp.Models
 
         public string Address { get; set; }
 
-        public string Description { get; set; }
-
         public int NumBeds { get; set; }
 
         public decimal NumBaths { get; set; }
@@ -32,8 +30,7 @@ namespace RealEstateWebApp.Models
 
         public decimal LotSize { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime YearBuilt { get; set; }
+        public int YearBuilt { get; set; }
 
         [DataType(DataType.DateTime)]
         public DateTime? LatestRenovationDate { get; set; }

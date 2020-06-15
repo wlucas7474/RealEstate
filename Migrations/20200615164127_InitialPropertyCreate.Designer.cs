@@ -10,7 +10,7 @@ using RealEstateWebApp.Data;
 namespace RealEstateWebApp.Migrations
 {
     [DbContext(typeof(PropertyContext))]
-    [Migration("20200611202318_InitialPropertyCreate")]
+    [Migration("20200615164127_InitialPropertyCreate")]
     partial class InitialPropertyCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,9 +35,6 @@ namespace RealEstateWebApp.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Cooling")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Electric")
@@ -100,8 +97,8 @@ namespace RealEstateWebApp.Migrations
                     b.Property<string>("TV")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("YearBuilt")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("YearBuilt")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

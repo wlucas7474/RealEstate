@@ -35,9 +35,6 @@ namespace RealEstateWebApp.Migrations
                     b.Property<string>("Cooling")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Electric")
                         .HasColumnType("nvarchar(max)");
 
@@ -98,8 +95,8 @@ namespace RealEstateWebApp.Migrations
                     b.Property<string>("TV")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("YearBuilt")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("YearBuilt")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
