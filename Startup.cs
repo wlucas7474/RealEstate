@@ -27,7 +27,8 @@ namespace RealEstateWebApp
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<PropertyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PropertyContext")));
+            services.AddDbContext<RealEstateContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("RealEstateContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

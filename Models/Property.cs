@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace RealEstateWebApp.Models
 {
     public class Property
     {
-        public int Id { get; set; }
+        public int PropertyId { get; set; }
 
         public string Address { get; set; }
 
@@ -58,5 +59,9 @@ namespace RealEstateWebApp.Models
         public string TV { get; set; }
 
         public string OtherDetails { get; set; }
+
+
+
+        public ICollection<Listing> Listings { get; set; }
     }
 }
